@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		255D11FA1FD686A300AEFA7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D11F91FD686A300AEFA7A /* AppDelegate.swift */; };
+		255D11FC1FD686A300AEFA7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D11FB1FD686A300AEFA7A /* ViewController.swift */; };
+		255D11FF1FD686A300AEFA7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255D11FD1FD686A300AEFA7A /* Main.storyboard */; };
+		255D12011FD686A300AEFA7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 255D12001FD686A300AEFA7A /* Assets.xcassets */; };
+		255D12041FD686A300AEFA7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255D12021FD686A300AEFA7A /* LaunchScreen.storyboard */; };
+		255D120F1FD686A300AEFA7A /* BTCLivePriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D120E1FD686A300AEFA7A /* BTCLivePriceTests.swift */; };
+		255D12201FD6871800AEFA7A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 255D121F1FD6871800AEFA7A /* NotificationCenter.framework */; };
+		255D12231FD6871800AEFA7A /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255D12221FD6871800AEFA7A /* TodayViewController.swift */; };
+		255D12261FD6871800AEFA7A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 255D12241FD6871800AEFA7A /* MainInterface.storyboard */; };
+		255D122A1FD6871800AEFA7A /* BTCLivePriceTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 255D121D1FD6871800AEFA7A /* BTCLivePriceTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		255D120B1FD686A300AEFA7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 255D11EE1FD686A300AEFA7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 255D11F51FD686A300AEFA7A;
+			remoteInfo = BTCLivePrice;
+		};
+		255D12281FD6871800AEFA7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 255D11EE1FD686A300AEFA7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 255D121C1FD6871800AEFA7A;
+			remoteInfo = BTCLivePriceTodayExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		255D122E1FD6871800AEFA7A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				255D122A1FD6871800AEFA7A /* BTCLivePriceTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		255D11F61FD686A300AEFA7A /* BTCLivePrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTCLivePrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		255D11F91FD686A300AEFA7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		255D11FB1FD686A300AEFA7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		255D11FE1FD686A300AEFA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		255D12001FD686A300AEFA7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		255D12031FD686A300AEFA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		255D12051FD686A300AEFA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		255D120A1FD686A300AEFA7A /* BTCLivePriceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTCLivePriceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		255D120E1FD686A300AEFA7A /* BTCLivePriceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTCLivePriceTests.swift; sourceTree = "<group>"; };
+		255D12101FD686A300AEFA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		255D121D1FD6871800AEFA7A /* BTCLivePriceTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BTCLivePriceTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		255D121F1FD6871800AEFA7A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		255D12221FD6871800AEFA7A /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		255D12251FD6871800AEFA7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		255D12271FD6871800AEFA7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		255D122F1FD687CB00AEFA7A /* BTCLivePrice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BTCLivePrice.entitlements; sourceTree = "<group>"; };
+		255D12301FD687E900AEFA7A /* BTCLivePriceTodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BTCLivePriceTodayExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		255D11F31FD686A300AEFA7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255D12071FD686A300AEFA7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255D121A1FD6871800AEFA7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255D12201FD6871800AEFA7A /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		255D11ED1FD686A300AEFA7A = {
+			isa = PBXGroup;
+			children = (
+				255D11F81FD686A300AEFA7A /* BTCLivePrice */,
+				255D120D1FD686A300AEFA7A /* BTCLivePriceTests */,
+				255D12211FD6871800AEFA7A /* BTCLivePriceTodayExtension */,
+				255D121E1FD6871800AEFA7A /* Frameworks */,
+				255D11F71FD686A300AEFA7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		255D11F71FD686A300AEFA7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				255D11F61FD686A300AEFA7A /* BTCLivePrice.app */,
+				255D120A1FD686A300AEFA7A /* BTCLivePriceTests.xctest */,
+				255D121D1FD6871800AEFA7A /* BTCLivePriceTodayExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		255D11F81FD686A300AEFA7A /* BTCLivePrice */ = {
+			isa = PBXGroup;
+			children = (
+				255D122F1FD687CB00AEFA7A /* BTCLivePrice.entitlements */,
+				255D11F91FD686A300AEFA7A /* AppDelegate.swift */,
+				255D11FB1FD686A300AEFA7A /* ViewController.swift */,
+				255D11FD1FD686A300AEFA7A /* Main.storyboard */,
+				255D12001FD686A300AEFA7A /* Assets.xcassets */,
+				255D12021FD686A300AEFA7A /* LaunchScreen.storyboard */,
+				255D12051FD686A300AEFA7A /* Info.plist */,
+			);
+			path = BTCLivePrice;
+			sourceTree = "<group>";
+		};
+		255D120D1FD686A300AEFA7A /* BTCLivePriceTests */ = {
+			isa = PBXGroup;
+			children = (
+				255D120E1FD686A300AEFA7A /* BTCLivePriceTests.swift */,
+				255D12101FD686A300AEFA7A /* Info.plist */,
+			);
+			path = BTCLivePriceTests;
+			sourceTree = "<group>";
+		};
+		255D121E1FD6871800AEFA7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				255D121F1FD6871800AEFA7A /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		255D12211FD6871800AEFA7A /* BTCLivePriceTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				255D12301FD687E900AEFA7A /* BTCLivePriceTodayExtension.entitlements */,
+				255D12221FD6871800AEFA7A /* TodayViewController.swift */,
+				255D12241FD6871800AEFA7A /* MainInterface.storyboard */,
+				255D12271FD6871800AEFA7A /* Info.plist */,
+			);
+			path = BTCLivePriceTodayExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		255D11F51FD686A300AEFA7A /* BTCLivePrice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 255D12131FD686A300AEFA7A /* Build configuration list for PBXNativeTarget "BTCLivePrice" */;
+			buildPhases = (
+				255D11F21FD686A300AEFA7A /* Sources */,
+				255D11F31FD686A300AEFA7A /* Frameworks */,
+				255D11F41FD686A300AEFA7A /* Resources */,
+				255D122E1FD6871800AEFA7A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				255D12291FD6871800AEFA7A /* PBXTargetDependency */,
+			);
+			name = BTCLivePrice;
+			productName = BTCLivePrice;
+			productReference = 255D11F61FD686A300AEFA7A /* BTCLivePrice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		255D12091FD686A300AEFA7A /* BTCLivePriceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 255D12161FD686A300AEFA7A /* Build configuration list for PBXNativeTarget "BTCLivePriceTests" */;
+			buildPhases = (
+				255D12061FD686A300AEFA7A /* Sources */,
+				255D12071FD686A300AEFA7A /* Frameworks */,
+				255D12081FD686A300AEFA7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				255D120C1FD686A300AEFA7A /* PBXTargetDependency */,
+			);
+			name = BTCLivePriceTests;
+			productName = BTCLivePriceTests;
+			productReference = 255D120A1FD686A300AEFA7A /* BTCLivePriceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		255D121C1FD6871800AEFA7A /* BTCLivePriceTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 255D122B1FD6871800AEFA7A /* Build configuration list for PBXNativeTarget "BTCLivePriceTodayExtension" */;
+			buildPhases = (
+				255D12191FD6871800AEFA7A /* Sources */,
+				255D121A1FD6871800AEFA7A /* Frameworks */,
+				255D121B1FD6871800AEFA7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTCLivePriceTodayExtension;
+			productName = BTCLivePriceTodayExtension;
+			productReference = 255D121D1FD6871800AEFA7A /* BTCLivePriceTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		255D11EE1FD686A300AEFA7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = MEEM;
+				TargetAttributes = {
+					255D11F51FD686A300AEFA7A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					255D12091FD686A300AEFA7A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 255D11F51FD686A300AEFA7A;
+					};
+					255D121C1FD6871800AEFA7A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 255D11F11FD686A300AEFA7A /* Build configuration list for PBXProject "BTCLivePrice" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 255D11ED1FD686A300AEFA7A;
+			productRefGroup = 255D11F71FD686A300AEFA7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				255D11F51FD686A300AEFA7A /* BTCLivePrice */,
+				255D12091FD686A300AEFA7A /* BTCLivePriceTests */,
+				255D121C1FD6871800AEFA7A /* BTCLivePriceTodayExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		255D11F41FD686A300AEFA7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255D12041FD686A300AEFA7A /* LaunchScreen.storyboard in Resources */,
+				255D12011FD686A300AEFA7A /* Assets.xcassets in Resources */,
+				255D11FF1FD686A300AEFA7A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255D12081FD686A300AEFA7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255D121B1FD6871800AEFA7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255D12261FD6871800AEFA7A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		255D11F21FD686A300AEFA7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255D11FC1FD686A300AEFA7A /* ViewController.swift in Sources */,
+				255D11FA1FD686A300AEFA7A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255D12061FD686A300AEFA7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255D120F1FD686A300AEFA7A /* BTCLivePriceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		255D12191FD6871800AEFA7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				255D12231FD6871800AEFA7A /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		255D120C1FD686A300AEFA7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 255D11F51FD686A300AEFA7A /* BTCLivePrice */;
+			targetProxy = 255D120B1FD686A300AEFA7A /* PBXContainerItemProxy */;
+		};
+		255D12291FD6871800AEFA7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 255D121C1FD6871800AEFA7A /* BTCLivePriceTodayExtension */;
+			targetProxy = 255D12281FD6871800AEFA7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		255D11FD1FD686A300AEFA7A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				255D11FE1FD686A300AEFA7A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		255D12021FD686A300AEFA7A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				255D12031FD686A300AEFA7A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		255D12241FD6871800AEFA7A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				255D12251FD6871800AEFA7A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		255D12111FD686A300AEFA7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		255D12121FD686A300AEFA7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		255D12141FD686A300AEFA7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BTCLivePrice/BTCLivePrice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BTCLivePrice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.karthik.BTCLivePrice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		255D12151FD686A300AEFA7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BTCLivePrice/BTCLivePrice.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BTCLivePrice/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.karthik.BTCLivePrice;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		255D12171FD686A300AEFA7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L665RRN8MH;
+				INFOPLIST_FILE = BTCLivePriceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meem.BTCLivePriceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTCLivePrice.app/BTCLivePrice";
+			};
+			name = Debug;
+		};
+		255D12181FD686A300AEFA7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L665RRN8MH;
+				INFOPLIST_FILE = BTCLivePriceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meem.BTCLivePriceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTCLivePrice.app/BTCLivePrice";
+			};
+			name = Release;
+		};
+		255D122C1FD6871800AEFA7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BTCLivePriceTodayExtension/BTCLivePriceTodayExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BTCLivePriceTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.karthik.BTCLivePrice.BTCLivePriceTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		255D122D1FD6871800AEFA7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = BTCLivePriceTodayExtension/BTCLivePriceTodayExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = BTCLivePriceTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.karthik.BTCLivePrice.BTCLivePriceTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		255D11F11FD686A300AEFA7A /* Build configuration list for PBXProject "BTCLivePrice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255D12111FD686A300AEFA7A /* Debug */,
+				255D12121FD686A300AEFA7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		255D12131FD686A300AEFA7A /* Build configuration list for PBXNativeTarget "BTCLivePrice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255D12141FD686A300AEFA7A /* Debug */,
+				255D12151FD686A300AEFA7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		255D12161FD686A300AEFA7A /* Build configuration list for PBXNativeTarget "BTCLivePriceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255D12171FD686A300AEFA7A /* Debug */,
+				255D12181FD686A300AEFA7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		255D122B1FD6871800AEFA7A /* Build configuration list for PBXNativeTarget "BTCLivePriceTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				255D122C1FD6871800AEFA7A /* Debug */,
+				255D122D1FD6871800AEFA7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 255D11EE1FD686A300AEFA7A /* Project object */;
+}
